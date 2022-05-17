@@ -24,7 +24,7 @@ class grafo(object):
         if pessoa in list(self.adj.keys()):
             listagem_amigos = self.adj[pessoa]
         else:
-            listagem_amigos = 'Nome não localizado !'
+            raise NomeNaoLocalizado
         
         return listagem_amigos
     
@@ -34,7 +34,7 @@ class grafo(object):
             if pessoa not in self.arestas[chave] and pessoa != chave and pessoa in list(self.adj.keys()):
                 listagem_nivel2.append(chave)
         if listagem_nivel2 == []:
-            return f'Nome existe nomes a serem listados'
+            raise NomeNaoLocalizado('Nome existe nomes a serem listados')
         else:
             return listagem_nivel2
 
@@ -43,7 +43,7 @@ class grafo(object):
     
     def adicionar_amigo(self,pessoa,amigo):
         if amigo not in list(self.adj.keys()):
-            return f'Amigo não localizado !'
+            raise NomeNaoLocalizado('Amigo não localizado !')
         else:
             self.adj[amigo].append(pessoa)
             return f'Nome Adicionado'

@@ -1,5 +1,5 @@
 const path = require('path');
-const scriptFilename = path.resolve(__dirname, "../../../backend");
+const scriptFilename = path.resolve(__dirname, "../../backend");
 const pythonfile = path.join(scriptFilename,'desafio.py');
 function listagrafo(req, res) {
     var spawn = require("child_process").spawn;

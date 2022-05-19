@@ -34,7 +34,7 @@ class grafo(object):
             if pessoa not in self.arestas[chave] and pessoa != chave and pessoa in list(self.adj.keys()):
                 listagem_nivel2.append(chave)
         if listagem_nivel2 == []:
-            raise NomeNaoLocalizado('Nome existe nomes a serem listados')
+            raise NomeNaoLocalizado('Não existe nomes a serem listados')
         else:
             return listagem_nivel2
 

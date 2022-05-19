@@ -1,6 +1,5 @@
-<h1 align="center" type="bold">Desafio LuizaLabs<h1>
 <h1 align="center">Projeto: Serviço Web – Grafo<h1>
-Este projeto foi idealizado a partir de um desafio proposto pela equipe do Luizalabs. Neste projeto, foi solicitado a criação de um serviço web que disponibilizasse algumas informações a partir de 4 propostas:
+Neste projeto, foi solicitado a criação de um serviço web que disponibilizasse algumas informações a partir de 4 propostas:
   
 1.	Uma maneira de expor todos os nós do grafo no estado atual 
 2.	Uma maneira de expor todas as pessoas que uma determinada pessoa conhece (nível 1)

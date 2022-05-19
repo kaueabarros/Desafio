@@ -3,8 +3,7 @@ const scriptFilename = path.resolve(__dirname, "../../backend");
 const pythonfile = path.join(scriptFilename,'desafio.py');
 function listagrafo(req, res) {
     var spawn = require("child_process").spawn;
-    var processo = spawn('python',[pythonfile] );
-    
+    var processo = spawn('python',[pythonfile]);    
     processo.on("exit", (code) => console.log("exitCode:", code));
     processo.stdout.on("data", function (buffer) {
         var resultado = buffer;
@@ -15,7 +14,7 @@ function listagrafo(req, res) {
 }
 function listaamigos(req, res) {
     var spawn = require("child_process").spawn;
-    var processo = spawn('python',[pythonfile] );
+    var processo = spawn('python',[pythonfile]);
     processo.on("exit", (code) => console.log("exitCode:", code));
     
     processo.stdout.on("data", function (buffer) {
